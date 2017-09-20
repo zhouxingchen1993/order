@@ -13,7 +13,7 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/commerce" userId="root"
+                        connectionURL="jdbc:mysql://localhost:3306/htsat-order" userId="root"
                         password="123456">
         </jdbcConnection>
         <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
@@ -47,9 +47,16 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="money"></table>
-        <table schema="" tableName="users"></table>
-        <table schema="" tableName="nation"></table>
-        <table schema="" tableName="product"></table>
+        <table schema="" tableName="r_ec_brand"></table>
+        <table schema="" tableName="r_ec_category"></table>
+        <table schema="" tableName="r_ec_deliveryinfo"></table>
+        <table schema="" tableName="r_ec_image"></table>
+        <table schema="" tableName="r_ec_orderinfo"></table>
+        <table schema="" tableName="r_ec_ordersku"></table>
+        <table schema="" tableName="r_ec_sku"></table>
+        <table schema="" tableName="r_ec_spu"></table>
+        <table schema="" tableName="r_ec_userbankinfo"></table>
+        <table schema="" tableName="r_ec_userdeliveryaddress"></table>
+        <table schema="" tableName="r_ec_userinfo"></table>
     </context>
 </generatorConfiguration>
